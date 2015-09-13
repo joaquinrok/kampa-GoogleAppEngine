@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kampa Recauda</title>
+
+<script src="static/hello.js"></script>
+
+<!--  Load the Google APIs Javascript client library -->
+<!--  Then call the init function, which is defined in hello.js -->
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+<link rel="stylesheet" type="text/css" href="static/style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  
+<body>
+<div class="main">
+    <H1>Kampa Recauda</H1>
+
+    <div class="txtnum_box">
+        <div class="txtnum">
+            <P>Recuadado:</P>
+            <P class="num" id="recaudado">---</P>
+        </div>
+        <div class="txtnum">
+            <P>Objetivo:</P>
+            <P class="num" id="objetivo">---</P>
+        </div><div class="txtnum">
+            <P style="opacity:0.0">.</P>
+            <P class="num" id="objetivo">=</P>
+        </div>
+        <div class="txtnum">
+            <P>Restante:</P>
+            <P class="num" id="restante">---</P>
+        </div>
+    </div>
+
+    <div class="txtnum_box">
+    <div class="input_box">
+        <P>Sumar:</P>
+        <P><input id="input_field_add" type></P>
+        <P><input class="btn" id="input_add_btn" type="button" value="Agregar"></P>
+    </div>
+
+    <div class="input_box">
+        <P>Total recaudado:</P>
+        <P><input id="input_field_total" type></P>
+        <P><input class="btn" id="input_total_btn" type="button" value="Modificar"></P>
+    </div>
+
+    <div class="input_box">
+        <P>Objetivo:</P>
+        <P><input id="input_field_obj" type></P>
+        <P><input class="btn" id="input_obj_btn" type="button" value="Modificar"></P>
+    </div>
+    </div>
+
+    <H1 id="wait">CARGANDO...</H1>
+
+    <div class="input_div">
+        <input id="generate_btn" type="button" value="Generar imagen">
+    </div>
+    <div class="input_div">
+        <a class="linktxt" href="https://www.facebook.com/groups/239742549401312/">Ir al grupo de Facebook</a>
+    </div>
+    <div class="input_box">
+        <p id="hazclick" style="display:none">Haz click en la imagen para descargarla.</p>
+    </div>
+    <a id="imgdownload" download="cover.jpeg" href="" sytle="hover {cursor:pointer;}">
+        <div id="imgdiv"></div>
+    </a>
+
+</div>
+</body>
+
+
+</html>
+
+
+
+
+
